@@ -1,0 +1,78 @@
+.contactus-dialog-title {
+  background-color: crimson;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  padding-left: 13px;
+  padding-bottom: 15px;
+  padding-top: 11px;
+}
+
+$header-footer-font: 20px;
+.modal-header {
+  background-color: crimson;
+  border-radius: 5px 5px 0 0;
+  border-bottom-width: 0;
+  color: #fcfcfc;
+  margin: 0;
+  padding: 10px;
+}
+
+mat-dialog-container.mat-dialog-container {
+  display: block;
+  text-align: center;
+  color: #000;
+  border: 0.05rem solid #fff;
+  border-radius: 5px 5px 5px 5px;
+  & .mat-dialog-content section span {
+    display: block;
+  }
+  & .mat-dialog-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    border-top-width: 0;
+  }
+  & .modal-dialog {
+    font: $header-footer-font;
+    max-width: 100%;
+    width: 600px;
+  }
+  & .mat-dialog-title {
+    font: $header-footer-font;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  & .mat-dialog-content {
+    font-size: 1.6rem;
+    padding: 20px 0px 10px;
+    margin: 0 10px;
+  }
+  & .mat-dialog-actions {
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+}
+
+.modal-actions.mat-dialog-actions span {
+  margin-bottom: 5px;
+}
+
+::ng-deep .modal-header .mat-dialog-title {
+  height: 50px;
+}
+.modal-dialog {
+  width: 498px;
+  height: 263px;
+  overflow: hidden;
+}
+.contact-details {
+  padding: 24px 24px 36px 24px;
+}
+.dialog-close-button {
+  float: right;
+  cursor: pointer;
+  padding-right: 40px;
+}

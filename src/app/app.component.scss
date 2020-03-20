@@ -1,0 +1,205 @@
+.navbar {
+  position: absolute;
+  height: 63px;
+  background-color: #d43d3d;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.pmbrLogo {
+  height: 60px;
+  width: 100px;
+}
+
+.footer {
+  left: 0;
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  height: 60px;
+}
+
+.button.button-secondary--large,
+button.button-secondary--large {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  height: 55px;
+  background-color: #d43d3d !important;
+  padding: 1em 2.4rem !important;
+  color: white !important;
+  border-color: white !important;
+  border: solid !important;
+  border-radius: 25px;
+  font-size: medium;
+  font-weight: 900;
+}
+.mat-button-wrapper {
+  font-weight: 900;
+}
+.activecoursecontainer {
+  width: 821px;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+}
+
+.bgimg {
+  width: 200px;
+  height: 124px;
+  z-index: 2;
+  background: url("../assets/pmbr_logo.png") no-repeat;
+  background-size: 219px 65px;
+}
+
+.flexbox {
+  display: inline-flex;
+  height: 60px;
+  width: 860px;
+  justify-content: space-evenly;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  margin-top: 20px !important;
+  height: 158px !important;
+}
+
+.profileicon {
+  margin-top: 8px;
+  width: 47px;
+  background: url("../assets/profileicon.png") no-repeat;
+  background-size: 50px 50px;
+}
+
+.support-text {
+  color: black;
+  padding-top: 22px;
+}
+
+.course-links-bar {
+  position: relative;
+  height: 55px;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  top: 66px;
+}
+
+.course-links {
+  margin: auto 0;
+  text-align: center;
+  padding-top: 18px;
+}
+.course-links a {
+  text-decoration: none;
+  color: crimson;
+  font-weight: 900;
+  width: 476px;
+  font: Helvetica;
+  size: 16px;
+  line-height: 19px;
+}
+
+.menu {
+  font: Helvetica;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 900;
+}
+
+.menu-dropdown {
+  color: white;
+  height: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 19px;
+}
+
+.logout {
+  color: white;
+  width: 63px;
+  height: 19px;
+  font: Helvetica Neue;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 24px;
+  margin-bottom: 22px;
+  margin-right: 100px;
+}
+
+.coursedetialslayoutactive {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coursedetialslayoutexpired {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.course-title {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.enrollment-agreement {
+  width: 750px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.course-details {
+  display: flex;
+  flex-direction: column;
+}
+.mat-expansion-panel-header-description,
+.mat-expansion-panel-header-title {
+  justify-content: space-between;
+}
+
+::ng-deep mat-dialog-container {
+  padding: 0 !important;
+}
+
+.first-column {
+  padding-top: 46px;
+  padding-bottom: 31px;
+}
+.second-column {
+  padding-top: 28px;
+}
+.enrollment-id {
+  padding-top: 28px;
+}
+.course-description {
+  padding-bottom: 30px;
+}

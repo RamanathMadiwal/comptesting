@@ -1,0 +1,93 @@
+<div class="navbar">
+  <div class="logo">
+    <div class="bgimg"></div>
+  </div>
+  <div class="nav-items">
+    <div class="profileicon"></div>
+    <div class="menu-dropdown">
+      <button mat-button [matMenuTriggerFor]="menu">Your Account</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Change Password</button>
+        <button mat-menu-item (click)="openDialog()">Contact Us</button>
+      </mat-menu>
+    </div>
+    <div class="logout">Log out</div>
+  </div>
+</div>
+<div class="course-links-bar">
+  <div class="course-links">
+    <a href="">GET A FREE QBANK TRIAL
+    </a>
+    <a href="">
+      | SIGN IN TO FREE QBANK TRIAL
+    </a>
+  </div>
+</div>
+<div class="coursedetialslayoutactive" *ngIf="activeCourses">
+  <div class="activecoursecontainer">
+    <h2 class="course-description">Your Active Courses</h2>
+    <div *ngFor='let activecoursedetails of activeCourses'>
+      <mat-accordion [togglePosition]="'before'">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'auto'" [expandedHeight]="'auto'">
+            <div class="course-title">
+              <mat-panel-title>
+                <div class="first-column">
+                  <h3>{{activecoursedetails.CourseDetails.Name}}</h3>
+                  <h4 class="text-grey">
+                    Expires on {{activecoursedetails.ExpirationDate | date:'M/d/y'}}
+                  </h4>
+                </div>
+                <br>
+                <div class="second-column">
+                  <button class="button-secondary--large button-toggle-explanation contactbuttontext"
+                    (click)="launchCourse(activecoursedetails.LaunchUrl)">LAUNCH COURSE</button>
+                </div>
+              </mat-panel-title>
+            </div>
+          </mat-expansion-panel-header>
+          <mat-divider></mat-divider>
+          <br>
+          <mat-panel-description>
+            <mat-divider></mat-divider>
+            <div class="course-details">
+              <mat-divider></mat-divider>
+              <div class="enrollment-agreement">
+                <h4 (click)='openEnrollmentAgreementDialog()'>See Enrollment Agreement > </h4>
+              </div>
+              <mat-divider></mat-divider>
+              <div class="enrollment-id">
+                <h4>Enrollment id :{{activecoursedetails.EnrollmentId}}</h4>
+              </div>
+            </div>
+          </mat-panel-description>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
+<br>
+<div class="coursedetialslayoutexpired">
+  <div class="activecoursecontainer" *ngIf="expiredCourses">
+    <h2 class="course-description">Your Inactive Courses</h2>
+    <div *ngFor='let expiredcoursedetails of expiredCourses'>
+      <mat-accordion [togglePosition]="'before'">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [collapsedHeight]="'auto'" [expandedHeight]="'auto'">
+            <mat-panel-title>
+              <div class="first-column">
+                <h3>{{expiredcoursedetails.CourseDetails.Name}}</h3>
+                <h4 class="text-grey">Expired on {{expiredcoursedetails.ExpirationDate | date:'M/d/y' }}</h4>
+              </div>
+              <br>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h3 class="support-text">If you need help, contact PMBR Support at support@pmbr.com</h3>
+</div>

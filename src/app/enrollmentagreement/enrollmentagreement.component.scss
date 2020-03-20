@@ -1,0 +1,119 @@
+.dialog-close-button {
+  float: right;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+.top {
+  width: 100%;
+  height: 900px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.top::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.title {
+  font-size: large;
+  height: 45px;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.header {
+  background-color: crimson;
+  color: white;
+}
+
+// body {
+//   font-family: Arial, Helvetica, sans-serif;
+//   /*color:#6e6f71;*/
+//   margin: 0px;
+//   padding: 0px;
+//   font-size: 12px;
+// }
+// .title {
+//   padding: 23px 1px 19px 12px;
+//   /*color: rgb(61, 61, 61);*/
+//   /*font-family: Georgia;*/
+//   font-size: 18px;
+//   font-weight: bold;
+//   border-bottom-color: rgb(223, 222, 222);
+//   border-bottom-width: 2px;
+//   border-bottom-style: solid;
+//   background-color: rgb(255, 255, 255);
+// }
+
+// .tableEnrollmentAgreement {
+//   font-family: Arial;
+//   /*background-color: rgb(248, 248, 248);*/
+// }
+
+// .mainBody {
+//   /*width: 619px;*/
+//   /*height:370px;*/
+//   float: left;
+//   border-radius: 5px;
+//   border: 6px solid rgb(223, 222, 222);
+//   position: relative;
+//   /*behavior: url(../WebFiles/CSS/PIE.htc);*/
+//   box-shadow: 2px 2px 4px gray;
+//   background-color: rgb(255, 255, 255);
+//   -webkit-box-shadow: 2px 2px 4px gray;
+//   -moz-box-shadow: 2px 2px 4px gray;
+// }
+
+// .eaSecondaryTitle {
+//   padding: 13px;
+//   height: 244px;
+//   font-size: 4;
+//   font-weight: bold;
+//   /*font-family: Georgia;*/
+//   font-size: 14px;
+//   /*color: #3D3D3D;*/
+//   padding: 13px;
+// }
+
+// p {
+//   text-align: justify;
+//   /*color: rgb(130, 131, 131);*/
+//   line-height: 1.6em;
+//   font-size: 13px;
+//   padding-left: 13px;
+//   padding-right: 13px;
+// }
+
+// .description {
+//   text-align: justify;
+//   /*color: rgb(130, 131, 131);*/
+//   line-height: 1.6em;
+//   font-size: 13px;
+//   padding-left: 13px;
+//   padding-right: 13px;
+// }
+
+// .radioButton {
+//   text-align: justify;
+//   line-height: 1.6em;
+//   font-size: 13px;
+//   padding-left: 33px;
+// }
+// .ulEnrollment {
+//   text-align: justify;
+//   /*color: rgb(130, 131, 131);*/
+//   font-size: 12px;
+// }
+
+// .btnDiv {
+//   padding-left: 720px;
+//   padding-bottom: 18px;
+// }
+
+.content {
+  padding: 20px 20px 20px 20px;
+}
